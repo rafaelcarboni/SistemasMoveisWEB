@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Açougue MCM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {height: 720px;}
+    
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Açougue Maria Carne Macia</h4><br>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="cad.html">Cadastrar Clientes</a></li>
+        <li><a href="edit.php">Editar um Cliente</a></li>
+        <li><a href="del.php">Deletar um Clientes</a></li>
+        <li><a href="ver.php">Ver todos os Clientes</a></li>
+        <li><a href="documentacao.html">Documentação</a></li>
+      </ul><br>
+    </div>
+
+    <div class="col-sm-9">
+      <h5>Projetos Sistemas Móveis</h5><br>
+        <form class="form-horizontal" method="post" action="cadastro.php">
+            <div class="form-group">
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="cpf" placeholder="CPF" name="cpf" maxlength="11">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="nome" placeholder="NOME COMPLETO" name="nome" maxlength="42">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="telefone" placeholder="TELEFONE" name="telefone"  maxlength="11">
+              </div>
+            </div>
+            <div class="form-group">        
+              <div class="col-sm-5">
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <button type="reset" class="btn btn-primary">Limpar</button>
+              </div>
+            </div>
+        </form>
+      <br><br>
+    </div>
+  </div>
+</div>
+</body>
+</html>
